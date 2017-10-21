@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDataModel2StoreContainer" CdmEntityContainer="MyDataEntities5">
+    <EntitySetMapping Name="Item_Table">
+      <EntityTypeMapping TypeName="MyDataModel2.Item_Table">
+        <MappingFragment StoreEntitySet="Item_Table">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="quant" ColumnName="quant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

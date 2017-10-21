@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MyDataEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin_Data" EntityType="MyDataModel1.Admin_Data" />
+  </EntityContainer>
+  <EntityType Name="Admin_Data">
+    <Key>
+      <PropertyRef Name="IDad" />
+    </Key>
+    <Property Type="Int32" Name="IDad" Nullable="false" />
+    <Property Type="String" Name="Fname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Uname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pword" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

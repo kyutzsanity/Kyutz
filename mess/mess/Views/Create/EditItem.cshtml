@@ -1,0 +1,23 @@
+﻿@model mess.EntFrame.Item_Table
+
+@using (Html.BeginForm())
+{
+
+<div class = "container">
+<div class ="registrationform">
+<tr><td><center><img src="~/MyTemp/img/edit.png" height="100px" width="100px"/></center></td></tr> 
+<div class="container" style="width:40%; margin-top:2%">
+
+<center><h5> @Html.TextBoxFor(s => s.item, new { @class = "form-control", @placeholder = "First Name" })
+@Html.ValidationMessageFor(s => s.item, "", new { @class = "error" })
+</h5></center>
+<center><h5> @Html.TextBoxFor(s => s.quant, new { @class = "form-control", @placeholder = "Last Name" })
+@Html.ValidationMessageFor(s => s.quant, "", new { @class = "error" })
+</h5></center>
+
+<input type="submit" value="Edit" class="btn btn-block btn-primary"/>
+</div>
+</div>
+</div>
+
+}

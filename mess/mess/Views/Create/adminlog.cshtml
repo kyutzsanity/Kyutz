@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+ <link rel="icon" href="~/MyTemp/img/favicon.png" type="image/png" sizes="16xfa16">
+<meta charset="utf-8"/>
+<meta name="veiwport" content="width=device-width, initial-scale=1"/>
+<link href="~/MyTemp/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="~/MyTemp/js/bootstrap.js" type="text/javascript"></script>
+<title>eReserve</title>
+</head>
+
+<body>
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+ <div class="navbar-header"><a class="navbar-brand" href="#">DYNAMICS</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+   <div class = "collapse navbar-collapse navbar-menubuilder">
+        <div class="navbar navbar-custom">
+    <ul class="nav navbar-nav">
+     <li>@Html.ActionLink("Homepage","Index","Home")</li>
+    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+    </ul>
+        </div>
+         </div>
+    </div>
+   @model mess.Models.Class2
+
+@using (Html.BeginForm())
+{             
+
+    <div class="Container">
+        <div class="registrationform">
+        <tr><td><center><img src="~/MyTemp/img/admin.png" height="100px" width="100px"/></center></td></tr> 
+        <center><h2><span style="color: White">Welcome Admin</span></h2></center>
+         <div class="container" style="width:40%; margin-top:2%">
+            
+           <center><h5>@Html.TextBoxFor(e => e.Uname, new { @class = "form-control", @placeholder = "Username" }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.Uname, "", new { @class = "error" })</span></h5></center>
+            <center><h5>@Html.PasswordFor(e => e.Pword, new { @class = "form-control", @placeholder = "Passsword" }) <span style="color:Red"> 
+            @Html.ValidationMessageFor(v => v.Pword, "", new { @class = "error" })</span></h5></center>
+            <input type="submit" value="Login" class="btn btn-block btn-primary" />
+        </div>
+        </div>
+    </div>
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

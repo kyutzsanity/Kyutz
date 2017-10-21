@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="My_DataModelStoreContainer" CdmEntityContainer="My_DataEntities">
+    <EntitySetMapping Name="My_Table">
+      <EntityTypeMapping TypeName="My_DataModel.My_Table">
+        <MappingFragment StoreEntitySet="My_Table">
+          <ScalarProperty Name="Pword" ColumnName="Pword" />
+          <ScalarProperty Name="Uname" ColumnName="Uname" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

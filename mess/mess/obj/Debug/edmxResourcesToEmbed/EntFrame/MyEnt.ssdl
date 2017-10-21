@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MyDataModelStoreContainer">
+    <EntitySet Name="My_Table" EntityType="MyDataModel.Store.My_Table" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="My_Table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="fname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="lname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="gender" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="contact" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Uname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pword" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="time" Type="time" Nullable="false" />
+  </EntityType>
+</Schema>

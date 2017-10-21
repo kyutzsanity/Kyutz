@@ -1,0 +1,38 @@
+﻿
+@model mess.Models.Class2
+
+@using (Html.BeginForm())
+{             
+
+    <div class="Container">
+        <div class=" registrationform">
+        <tr><td><center><img src="~/MyTemp/img/reg.png" height="100px" width="100px"/></center></td></tr> 
+        <center><h2><span style="color: white">eReserve Registration</span></h2></center>
+         <div class="container" style="width:40%; margin-top:2%">
+            
+            <center><h5>@Html.TextBoxFor(e => e.IDad, new { @class = "form-control", @placeholder = "ID Number" }) <span style="color:Red"> 
+             @Html.ValidationMessageFor(v => v.IDad, "", new { @class = "error" })</span></h5></center>
+
+            <center><h5>@Html.TextBoxFor(e => e.Fname, new { @class = "form-control", @placeholder = "First Name" }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.Fname, "", new { @class = "error" })</span></h5></center>
+
+            <center><h5>@Html.TextBoxFor(e => e.Lname, new { @class = "form-control", @placeholder = "Last Name" }) <span style="color:Red"> 
+            @Html.ValidationMessageFor(v => v.Lname, "", new { @class = "error" })</span></h5></center>
+
+              <center><h5>@Html.TextBoxFor(e => e.Email, new { @class = "form-control", @placeholder = "Email" }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.Email, "", new { @class = "error" })</span></h5></center>
+
+             <center><h5>@Html.TextBoxFor(e => e.Uname, new { @class = "form-control", @placeholder = "Username" }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.Uname, "", new { @class = "error" })</span></h5></center>
+
+            <center><h5>@Html.PasswordFor(e => e.Pword, new { @class = "form-control", @placeholder = "Passsword" }) <span style="color:Red"> 
+            @Html.ValidationMessageFor(v => v.Pword, "", new { @class = "error" })</span></h5></center>
+
+             <input type="submit" value="Register" class="btn btn-block btn-primary" />
+        </div>
+        </div>
+    </div>
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDataModel3StoreContainer" CdmEntityContainer="MyDataEntities6">
+    <EntitySetMapping Name="Room_table">
+      <EntityTypeMapping TypeName="MyDataModel3.Room_table">
+        <MappingFragment StoreEntitySet="Room_table">
+          <ScalarProperty Name="purpose" ColumnName="purpose" />
+          <ScalarProperty Name="timeofuse" ColumnName="timeofuse" />
+          <ScalarProperty Name="dateofuse" ColumnName="dateofuse" />
+          <ScalarProperty Name="room" ColumnName="room" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

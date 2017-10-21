@@ -1,0 +1,39 @@
+﻿@model mess.EntFrame.My_Table
+
+@using (Html.BeginForm())
+{
+
+<div class = "container">
+<div class ="registrationform">
+<tr><td><center><img src="~/MyTemp/img/delete.png" height="100px" width="100px"/></center></td></tr> 
+<div class="container" style="width:40%; margin-top:2%">
+
+<center><h5>@Html.TextBoxFor(s => s.ID, new { @class = "form-control", @placeholder = "ID Number" })
+@Html.ValidationMessageFor(s => s.ID, "", new { @class = "error" })
+</h5></center>
+
+<center><h5> @Html.TextBoxFor(s => s.fname, new { @class = "form-control", @placeholder = "First Name" })
+@Html.ValidationMessageFor(s => s.fname, "", new { @class = "error" })
+</h5></center>
+<center><h5> @Html.TextBoxFor(s => s.lname, new { @class = "form-control", @placeholder = "Last Name" })
+@Html.ValidationMessageFor(s => s.lname, "", new { @class = "error" })
+</h5></center>
+
+<center><h5> @Html.RadioButtonFor(s => s.gender, "Male")Male @Html.RadioButtonFor(s => s.gender, "Female")Female
+@Html.ValidationMessageFor(s => s.gender)
+</h5></center>
+ <center><h5>@Html.TextBoxFor(e => e.contact, new { @class = "form-control", @placeholder = "Contact Number " }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.contact, "", new { @class = "error" })</span></h5></center>
+
+              <center><h5>@Html.TextBoxFor(e => e.email, new { @class = "form-control", @placeholder = "Email" }) <span style="color:Red">
+             @Html.ValidationMessageFor(v => v.email, "", new { @class = "error" })</span></h5></center>
+
+<input type="submit" value="Delete" class="btn btn-block btn-primary"/>
+</div>
+</div>
+</div>
+
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MyDataModel1StoreContainer">
+    <EntitySet Name="Admin_Data" EntityType="MyDataModel1.Store.Admin_Data" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Admin_Data">
+    <Key>
+      <PropertyRef Name="IDad" />
+    </Key>
+    <Property Name="IDad" Type="int" Nullable="false" />
+    <Property Name="Fname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Lname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Uname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pword" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>

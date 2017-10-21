@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataModel2.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MyDataModel2StoreContainer">
+    <EntitySet Name="Item_Table" EntityType="MyDataModel2.Store.Item_Table" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Item_Table">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="item" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="quant" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>
